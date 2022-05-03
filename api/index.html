@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+	<script src="jquery-3.6.0.js"></script>
+	<script src="scripts.js"></script>
+</head >
+<body onload="loadGroups()">
+    <div class="header__wrapper">
+        <div class="header__container">
+            <header class="header">
+                
+                    <div class="header">
+                        <div class="header_section">
+                            <a class="header_item headerlogo ngtu__link" href="https://www.nstu.ru/">
+                                НГТУ
+                            </a>
+                            <div class="header_item headerlogo">
+                                Расписание
+                            </div>
+							<a class="header_item headerlogo ngtu__link" href="register.html">
+								Регистрация
+							</a>
+							<a class="header_item headerlogo ngtu__link" href="login.html">
+								Авторизация 
+							</a>
+
+                        </div>
+                    </div>
+            </header>
+			</div>
+        </div>
+		<div class="button">
+			<div id="groups">
+			</div>
+		</div>
+        <div class="container">
+        <div class="all__items">
+            <div class="items__left">
+                <div class="item">
+                    <table>
+						<tr>
+							 <th class="day">День</th>
+							 <th class="time">Время пары</th>
+							 <th class="subject">Предмет</th>
+							 <th class="teacher">Преподаватель</th>
+							 <th class="audience">Аудитория</th>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_1_1"></td>
+							 <td class="day" id="td_id_time_1_1"></td>
+							 <td class="subject" id="td_lesson_1_1"></td>
+							 <td class="teacher" id="td_teacher_1_1"></td>
+							 <td class="audience" id="td_room_1_1"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_1_2"></td>
+							 <td class="time" id="td_id_time_1_2"></td>
+							 <td class="subject"  id="td_lesson_1_2"></td>
+							 <td class="teacher" id="td_teacher_1_2"></td>
+							 <td class="audience" id="td_room_1_2"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_1_3"></td>
+							 <td class="time" id="td_id_time_1_3"></td>
+							 <td class="subject" "td_lesson_1_3"></td>
+							 <td class="teacher" id="td_teacher_1_3"></td>
+							 <td class="audience"  id="td_room_1_3"></td>
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_1_4"></td>
+							 <td class="time" id="td_id_time_1_4"></td>
+							 <td class="subject" "td_lesson_1_4"></td>
+							 <td class="teacher" id="td_teacher_1_4"></td>
+							 <td class="audience"  id="td_room_1_4"></td>   
+						</tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <table>
+							<tr>
+							 <th class="day">День</th>
+							 <th class="time">Время пары</th>
+							 <th class="subject">Предмет</th>
+							 <th class="teacher">Преподаватель</th>
+							 <th class="audience">Аудитория</th>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_2_1"></td>
+							 <td class="time" id="td_id_time_2_1"></td>
+							 <td class="subject" id="td_lesson_2_1"></td>
+							 <td class="teacher" id="td_teacher_2_1"></td>
+							 <td class="audience" id="td_room_2_1"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_2_2"></td>
+							 <td class="time" id="td_id_time_2_2"></td>
+							 <td class="subject" id="td_lesson_2_2"></td>
+							 <td class="teacher" id="td_teacher_2_2"></td>
+							 <td class="audience" id="td_room_2_2"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_2_3"></td>
+							 <td class="time" id="td_id_time_2_3"></td>
+							 <td class="subject" id="td_lesson_2_3"></td>
+							 <td class="teacher" id="td_teacher_2_3"></td>
+							 <td class="audience" id="td_room_2_3"></td>
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_2_4"></td>
+							 <td class="time" id="td_id_time_2_4"></td>
+							 <td class="subject" id="td_lesson_2_4"></td>
+							 <td class="teacher" id="td_teacher_2_4"></td>
+							 <td class="audience" id="td_room_2_4"></td>   
+						</tr>
+						</table>
+					</div>
+					<div class="item">
+                    <table>
+						<tr>
+							 <th class="day">День</th>
+							 <th class="time">Время пары</th>
+							 <th class="subject">Предмет</th>
+							 <th class="teacher">Преподаватель</th>
+							 <th class="audience">Аудитория</th>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_3_1"></td>
+							 <td class="time" id="td_id_time_3_1"></td>
+							 <td class="subject" id="td_lesson_3_1"></td>
+							 <td class="teacher" id="td_teacher_3_1"></td>
+							 <td class="audience" id="td_room_3_1"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_3_2"></td>
+							 <td class="time" id="td_id_time_3_2"></td>
+							 <td class="subject" id="td_lesson_3_2"></td>
+							 <td class="teacher" id="td_teacher_3_2"></td>
+							 <td class="audience" id="td_room_3_2"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_3_3"></td>
+							 <td class="time" id="td_id_time_3_3"></td>
+							 <td class="subject" id="td_lesson_3_3"></td>
+							 <td class="teacher" id="td_teacher_3_3"></td>
+							 <td class="audience"id="td_room_3_3"></td>
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_3_4"></td>
+							 <td class="time" id="td_id_time_3_4"></td>
+							 <td class="subject" id="td_lesson_3_4"></td>
+							 <td class="teacher" id="td_teacher_3_4"></td>
+							 <td class="audience"id="td_room_3_4"></td>   
+						</tr>
+                    </table>
+                </div>
+            </div>
+            <div class="items__right">
+                <div class="item">
+                    <table>
+						<tr>
+							 <th class="day">День</th>
+							 <th class="time">Время пары</th>
+							 <th class="subject">Предмет</th>
+							 <th class="teacher" id="td_teacher_1_1">Преподаватель</th>
+							 <th class="audience">Аудитория</th>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_4_1"></td>
+							 <td class-"time" id="td_id_time_4_1"></td>
+							 <td class="subject" id="td_lesson_4_1"></td>
+							 <td class="teacher" id="td_teacher_4_1"></td>
+							 <td class="audience" id="td_room_4_1"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_4_2"></td>
+							 <td class="time" id="td_id_time_4_2"></td>
+							 <td class="subject" id="td_lesson_4_2"></td>
+							 <td class="teacher" id="td_teacher_4_2"></td>
+							 <td class="audience" id="td_room_4_2"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_4_3"></td>
+							 <td class="time" id="td_id_time_4_3"></td>
+							 <td class="subject" id="td_lesson_4_3"></td>
+							 <td class="teacher" id="td_teacher_4_3"></td>
+							 <td class="audience" id="td_room_4_3"></td>
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_4_4"></td>
+							 <td class="time" id="td_id_time_4_4"></td>
+							 <td class="subject" id="td_lesson_4_4"></td>
+							 <td class="teacher" id="td_teacher_4_4"></td>
+							 <td class="audience" id="td_room_4_4"></td>   
+						</tr>
+											</table>
+										</div>
+					<div class="item">
+                    <table>
+						<tr>
+							 <th class="day">День</th>
+							 <th class="time">Время пары</th>
+							 <th class="subject">Предмет</th>
+							 <th class="teacher">Преподаватель</th>
+							 <th class="audience">Аудитория</th>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_5_1"></td>
+							 <td class="time" id="td_id_time_5_1"></td>
+							 <td class="subject" id="td_lesson_5_1"></td>
+							 <td class="teacher" id="td_teacher_5_1"></td>
+							 <td class="audience" id="td_room_5_1"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_5_2"></td>
+							 <td class="time" id="td_id_time_5_2"></td>
+							 <td class="subject" id="td_lesson_5_2"></td>
+							 <td class="teacher" id="td_teacher_5_2"></td>
+							 <td class="audience" id="td_room_5_2"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_5_3"></td>
+							 <td class="time" id="td_id_time_5_3"></td>
+							 <td class="subject" id="td_lesson_5_3"></td>
+							 <td class="teacher" id="td_teacher_5_3"></td>
+							 <td class="audience" id="td_room_5_3"></td>
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_5_4"></td>
+							 <td class="time" id="td_id_time_5_4"></td>
+							 <td class="subject" id="td_lesson_5_4"></td>
+							 <td class="teacher" id="td_teacher_5_4"></td>
+							 <td class="audience" id="td_room_5_4"></td>   
+						</tr>
+                    </table>
+                </div>
+                <div class="item">
+                    <table>
+						<tr>
+							 <th class="day">День</th>
+							 <th class="time">Время пары</th>
+							 <th class="subject">Предмет</th>
+							 <th class="teacher">Преподаватель</th>
+							 <th class="audience">Аудитория</th>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_6_1"></td>
+							 <td class="time" id="td_id_time_6_1"></td>
+							 <td class="subject" id="td_lesson_6_1"></td>
+							 <td class="teacher" id="td_teacher_6_1"></td>
+							 <td class="audience" id="td_room_6_1"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_6_2"></td>
+							 <td class="time" id="td_id_time_6_2"></td>
+							 <td class="subject" id="td_lesson_6_2"></td>
+							 <td class="teacher" id="td_teacher_6_2"></td>
+							 <td class="audience" id="td_room_6_2"></td>   
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_6_3"></td>
+							 <td class="time" id="td_id_time_6_3"></td>
+							 <td class="subject" id="td_lesson_6_3"></td>
+							 <td class="teacher" id="td_teacher_6_3"></td>
+							 <td class="audience" id="td_room_6_3"></td>
+						</tr>
+						<tr>
+							 <td class="day" id="td_id_day_6_4"></td>
+							 <td class="time" id="td_id_time_6_4"></td>
+							 <td class="subject "id="td_lesson_6_4"></td>
+							 <td class="teacher" id="td_teacher_6_4"></td>
+							 <td class="audience" id="td_room_6_4"></td>   
+						</tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+  
+   </div>
+</body>
+<div class="footer__wrapper">
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__items">
+					<div class="footer__item">
+						<p> КОНТАКТНАЯ ИНФОРМАЦИЯ: </p>
+						<p> <a href="https://www.nstu.ru/"> Новосибирский государственный технический университет, 1994–2022 </a> </p>
+						<p> <a href="https://vk.com/niki_trash"> Вконтакте </a> </p>
+						<p> Приёмная комиссия: +7(999)462-85-08  </p>
+					</div>
+						
+            </div>
+        </div>
+    </footer>
+</div>
